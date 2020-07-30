@@ -17,6 +17,7 @@ import java.util.Locale;
 @RequestMapping("/rest-api/")
 public class TextInputRestController {
 
+    // POST String separate by \n (Enter)
     @PostMapping(value = "/postString", headers = "Accept=application/json")
     public String postStringText(@RequestParam String inputValue) {
 
@@ -31,6 +32,7 @@ public class TextInputRestController {
         return Arrays.toString(splitString);
     }
 
+    // POST Array
     @PostMapping(value = "/postList", headers = "Accept=application/json")
     public List<String> postList(@RequestParam(value = "inputList") List<String> inputList) {
         for (int i = 0; i < inputList.size(); i++) {
