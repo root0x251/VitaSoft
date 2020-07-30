@@ -1,6 +1,6 @@
 # VitaSoft
 
-1) POST lines separated by "Enter" </br>
+1) POST lines separated by "\n" </br>
 http://localhost:8080/rest-api/postString?inputValue=Тихо струится река серебристая
 В царстве вечернем зеленой весны.
 Солнце садится за горы лесистые,
