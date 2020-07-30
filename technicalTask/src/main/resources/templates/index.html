@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Collection</title>
+</head>
+<body>
+
+<form action="/" th:action="@{/}" method="post">
+
+    <textarea th:name="@{inputText}" th:placeholder="${placeholder}"></textarea>
+    <button type="submit"> Submit </button>
+</form>
+</body>
+</html>
